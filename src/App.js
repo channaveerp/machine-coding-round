@@ -1,11 +1,11 @@
 import './App.css';
-import { UseMemoHook } from './components/UseMemoHook';
+import { Toast } from './components/Toasts/Toasts';
 
 function App() {
   return (
     <div className='App'>
       helo world
-      <UseMemoHook />
+      <Toast />
     </div>
   );
 }
