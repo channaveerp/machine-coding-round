@@ -40,3 +40,39 @@
 .theme {
   background: red;
 }
+
+.page-conatiner {
+  width: 850px;
+  height: 180px;
+}
+
+.img-conatiner img {
+  width: 150px;
+  height: 180px;
+  border-radius: 10px;
+  padding: 2px;
+}
+.btn-container {
+  display: flex;
+  gap: 5px;
+}
+.buttons {
+  padding: 1rem;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  margin: 1rem;
+}
+.prev-btn {
+  display: none;
+}
+.active {
+  background-color: white;
+  color: black;
+  border: 1px solid red;
+}
+input {
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+}
