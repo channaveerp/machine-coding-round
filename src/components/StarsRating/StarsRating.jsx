@@ -2,24 +2,21 @@ import React, { useState } from 'react';
 import '../../Styles/stars.css';
 
 const StarsRating = ({ starCount = 5 }) => {
-  const [starsValue, setStartValue] = useState();
-  const [mouhoverValue, setmouhoverValue] = useState();
-  console.log(mouhoverValue);
+  const [starValues, setStarValues] = useState();
+  const [onmouseValue, setonMouseValues] = useState();
+  console.log('onmouseValue', onmouseValue);
 
   return (
     <div>
-      {new Array(starCount).fill(0).map((value, index) => (
-        <div key={index} style={{ display: 'inline' }}>
+      {new Array(starCount).fill(0).map((star, index) => (
+        <div style={{ display: 'inline' }} key={index}>
           <span
-            onMouseEnter={() => setmouhoverValue(index + 1)}
-            onMouseLeave={() => setmouhoverValue(0)}
+            onMouseLeave={() => setonMouseValues(0)}
+            onMouseEnter={() => setonMouseValues(index)}
             className={`${
-              (mouhoverValue === 0 && index < starsValue) ||
-              index < mouhoverValue
-                ? 'gold'
-                : 'star'
+              index < starValues || index < onmouseValue ? 'gold' : ''
             }`}
-            onClick={() => setStartValue(index + 1)}>
+            onClick={() => setStarValues(index + 1)}>
             &#9733;
           </span>
         </div>
