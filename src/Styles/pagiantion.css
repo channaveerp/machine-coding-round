@@ -1,0 +1,20 @@
+.img-conatiner {
+  width: 850px;
+  height: 180px;
+  display: flex;
+  gap: 10px;
+}
+.img-conatiner img {
+  width: 100px;
+  height: 180px;
+  border-radius: 10px;
+}
+.pagiantion-btn {
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+}
+.active {
+  background-color: white;
+  color: black;
+}
