@@ -102,3 +102,14 @@ img {
   right: 1rem;
   padding: 1rem;
 }
+.post-img-conatoner {
+  display: flex;
+  flex-direction: column;
+}
+.post-img {
+  width: 150px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 10px;
+}

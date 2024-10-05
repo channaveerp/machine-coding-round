@@ -1,4 +1,5 @@
 import './App.css';
+import InfinetScroll from './components/InfinetScroll/InfinetScroll';
 import Pagination from './components/Pagination/Pagination';
 import { Slider } from './components/Slider/Slider';
 import StarsRating from './components/StarsRating/StarsRating';
@@ -12,7 +13,8 @@ function App() {
       {/* <Toast /> */}
       {/* <StarsRating starCount={10} /> */}
       {/* <Pagination /> */}
-      <Slider data={data} />
+      {/* <Slider data={data} /> */}
+      <InfinetScroll />
     </div>
   );
 }
