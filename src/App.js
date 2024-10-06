@@ -1,5 +1,6 @@
 import './App.css';
 import CallbackParent from './components/calback/CallbackParent';
+import Filter from './components/Filter/Filter';
 
 import InfinetScroll from './components/InfinetScroll/InfinetScroll';
 import Pagination from './components/Pagination/Pagination';
@@ -30,7 +31,8 @@ function App() {
       {/* <InfinetScroll /> */}
       {/* <Trafic /> */}
       {/* <CallbackParent /> */}
-      <UseMemoHook />
+      {/* <UseMemoHook /> */}
+      <Filter />
     </div>
   );
 }
