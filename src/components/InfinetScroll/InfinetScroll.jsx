@@ -14,7 +14,7 @@ const InfinetScroll = () => {
           const FilterArr = arr.filter(
             (newItem) => !prev.some((existing) => existing.id === newItem.id)
           );
-          return [...prev, ...FilterArr];
+          return [...prev, ...filterArray];
         })
       );
   }, [page]);
