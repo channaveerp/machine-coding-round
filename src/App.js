@@ -1,7 +1,8 @@
+import { useContext } from 'react';
 import './App.css';
 import CallbackParent from './components/calback/CallbackParent';
-import Filter from './components/Filter/Filter';
 
+import Filter from './components/Filter/Filter';
 import InfinetScroll from './components/InfinetScroll/InfinetScroll';
 import Pagination from './components/Pagination/Pagination';
 import { Slider } from './components/Slider/Slider';
@@ -10,6 +11,13 @@ import { Toast } from './components/Toasts/Toasts';
 import Trafic from './components/trafic/Trafic';
 import { UseMemoHook } from './components/usememo/UseMemoHook';
 import data from './data.json';
+import {
+  contextTheme,
+  ThemeProvider,
+} from './components/ContextApi/ContextApi';
+import DataFetching, {
+  DataFetchContext,
+} from './components/ContextApi/DataFetching';
 
 function App() {
   const arr = [1, 2, 3, 4, 5];
@@ -22,18 +30,20 @@ function App() {
   console.log('orignal arr', arr);
 
   return (
-    <div className='App'>
-      helo world
-      {/* <Toast /> */}
-      {/* <StarsRating starCount={10} /> */}
-      {/* <Pagination /> */}
-      {/* <Slider data={data} /> */}
-      {/* <InfinetScroll /> */}
-      {/* <Trafic /> */}
-      {/* <CallbackParent /> */}
-      {/* <UseMemoHook /> */}
-      <Filter />
-    </div>
+    <DataFetching>
+      <div className='App'>
+        helo world
+        {/* <Toast /> */}
+        {/* <StarsRating starCount={10} /> */}
+        {/* <Pagination /> */}
+        {/* <Slider data={data} /> */}
+        {/* <InfinetScroll /> */}
+        <Trafic />
+        {/* <CallbackParent /> */}
+        {/* <UseMemoHook /> */}
+        {/* <Filter /> */}
+      </div>
+    </DataFetching>
   );
 }
 

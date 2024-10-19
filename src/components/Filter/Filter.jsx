@@ -1,6 +1,7 @@
 import axios from 'axios';
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import Pagination from '../Pagination/Pagination';
+import { contextTheme } from '../ContextApi/ContextApi';
 
 const Filter = () => {
   const [data, setdata] = useState([]);
@@ -40,6 +41,7 @@ const Filter = () => {
       item?.price?.toString().includes(search.toLowerCase())
   );
   console.log('search:', searData);
+
 
   return (
     <div>
