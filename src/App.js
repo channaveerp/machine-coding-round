@@ -18,16 +18,17 @@ import {
 import DataFetching, {
   DataFetchContext,
 } from './components/ContextApi/DataFetching';
+import UseReducerHook from './components/UseReducerHook/UseReducerHook';
 
 function App() {
   const arr = [1, 2, 3, 4, 5];
 
   const mapp = arr.map((child) => console.log('mappin*2', child * 2));
 
-  console.log('orignal arr', arr);
+  // console.log('orignal arr', arr);
 
   const filteringarr = arr.filter((child) => console.log('filter2', child < 2));
-  console.log('orignal arr', arr);
+  // console.log('orignal arr', arr);
 
   return (
     <DataFetching>
@@ -35,13 +36,14 @@ function App() {
         helo world
         {/* <Toast /> */}
         {/* <StarsRating starCount={10} /> */}
-        {/* <Pagination /> */}
+        <Pagination />
         {/* <Slider data={data} /> */}
         {/* <InfinetScroll /> */}
-        <Trafic />
+        {/* <Trafic /> */}
         {/* <CallbackParent /> */}
         {/* <UseMemoHook /> */}
         {/* <Filter /> */}
+        {/* <UseReducerHook /> */}
       </div>
     </DataFetching>
   );
