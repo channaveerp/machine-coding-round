@@ -19,6 +19,8 @@ import DataFetching, {
   DataFetchContext,
 } from './components/ContextApi/DataFetching';
 import UseReducerHook from './components/UseReducerHook/UseReducerHook';
+import SignalsTrafic from './components/TraficSignal/SignalsTrafic';
+import ScrollDirection from './components/ScrollDirection/ScrollDirection';
 
 function App() {
   const arr = [1, 2, 3, 4, 5];
@@ -36,7 +38,7 @@ function App() {
         helo world
         {/* <Toast /> */}
         {/* <StarsRating starCount={10} /> */}
-        <Pagination />
+        {/* <Pagination /> */}
         {/* <Slider data={data} /> */}
         {/* <InfinetScroll /> */}
         {/* <Trafic /> */}
@@ -44,6 +46,30 @@ function App() {
         {/* <UseMemoHook /> */}
         {/* <Filter /> */}
         {/* <UseReducerHook /> */}
+        {/* <SignalsTrafic /> */}
+        <ScrollDirection />
+        <ScrollDirection />
+        <ScrollDirection />
+        <ScrollDirection />
+        <ScrollDirection />
+        <ScrollDirection />
+        <ScrollDirection />
+        <ScrollDirection />
+        <ScrollDirection />
+        <ScrollDirection />
+        <ScrollDirection />
+        <ScrollDirection />
+        <ScrollDirection />
+        <ScrollDirection />
+        <ScrollDirection />
+        <ScrollDirection />
+        <ScrollDirection />
+        <ScrollDirection />
+        <ScrollDirection />
+        <ScrollDirection />
+        <ScrollDirection />
+        <ScrollDirection />
+        <ScrollDirection />
       </div>
     </DataFetching>
   );
