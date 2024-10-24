@@ -127,6 +127,7 @@ img {
   margin: auto;
   border-radius: 5px;
   text-align: left;
+  margin-bottom: 15px;
 }
 .collaps-title {
   display: flex;
