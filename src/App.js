@@ -21,6 +21,7 @@ import DataFetching, {
 import UseReducerHook from './components/UseReducerHook/UseReducerHook';
 import SignalsTrafic from './components/TraficSignal/SignalsTrafic';
 import ScrollDirection from './components/ScrollDirection/ScrollDirection';
+import Collapsable from './components/Collapsable/Collapsable';
 
 function App() {
   const arr = [1, 2, 3, 4, 5];
@@ -47,6 +48,7 @@ function App() {
         {/* <Filter /> */}
         {/* <UseReducerHook /> */}
         {/* <SignalsTrafic /> */}
+        {/* <ScrollDirection />
         <ScrollDirection />
         <ScrollDirection />
         <ScrollDirection />
@@ -68,8 +70,8 @@ function App() {
         <ScrollDirection />
         <ScrollDirection />
         <ScrollDirection />
-        <ScrollDirection />
-        <ScrollDirection />
+        <ScrollDirection /> */}
+        <Collapsable />
       </div>
     </DataFetching>
   );

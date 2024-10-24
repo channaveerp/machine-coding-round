@@ -16,6 +16,7 @@ const useDierction = () => {
     prevRefy.current > window.scrollY
       ? setScrollDirection('upward direction')
       : setScrollDirection('downward direction');
+      
     prevRefy.current = window.scrollY;
   };
 
