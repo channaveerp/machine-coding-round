@@ -23,6 +23,7 @@ import SignalsTrafic from './components/TraficSignal/SignalsTrafic';
 import ScrollDirection from './components/ScrollDirection/ScrollDirection';
 import Collapsable from './components/Collapsable/Collapsable';
 import MovieableDiv from './components/MovieableDiv/MovieableDiv';
+import Counter from './components/Counter/Counter';
 
 function App() {
   const arr = [1, 2, 3, 4, 5];
@@ -73,7 +74,8 @@ function App() {
         <ScrollDirection />
         <ScrollDirection /> */}
         {/* <Collapsable /> */}
-        <MovieableDiv />
+        {/* <MovieableDiv /> */}
+        <Counter />
       </div>
     </DataFetching>
   );
