@@ -22,6 +22,7 @@ import UseReducerHook from './components/UseReducerHook/UseReducerHook';
 import SignalsTrafic from './components/TraficSignal/SignalsTrafic';
 import ScrollDirection from './components/ScrollDirection/ScrollDirection';
 import Collapsable from './components/Collapsable/Collapsable';
+import MovieableDiv from './components/MovieableDiv/MovieableDiv';
 
 function App() {
   const arr = [1, 2, 3, 4, 5];
@@ -71,7 +72,8 @@ function App() {
         <ScrollDirection />
         <ScrollDirection />
         <ScrollDirection /> */}
-        <Collapsable />
+        {/* <Collapsable /> */}
+        <MovieableDiv />
       </div>
     </DataFetching>
   );

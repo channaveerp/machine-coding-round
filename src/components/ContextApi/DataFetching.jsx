@@ -2,7 +2,7 @@ import axios from 'axios';
 import React, { createContext, useEffect, useState } from 'react';
 
 export const DataFetchContext = createContext();
-const DataFetching = ({ url,children }) => {
+const DataFetching = ({children }) => {
   const [data, setData] = useState(null);
 
   const fetchData = async () => {
